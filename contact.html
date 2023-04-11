@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Göksel Doğan</title>
+  </head>
+  <body>
+    <nav id="main-nav" class="nav responsive">
+      <div class="container">
+        <a class="logo1" href="index.html"
+          ><img class="logo" src="images/logo.png" alt=""
+        /></a>
+        <ul class="navigation">
+          <li class="link"><a href="index.html">Ana Sayfa</a></li>
+          <li class="link"><a href="blogs.html">Blog</a></li>
+          <li class="link"><a href="about.html">Hakkımda</a></li>
+          <li class="link"><a href="contact.html">İletişim</a></li>
+          <li class="last">
+            <a href="#" onclick="displayMenu()"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <form onsubmit="sendEmail(); reset(); return false;">
+          <h2>İLETİŞİM</h2>
+          <input type="text" id="name" class="field" placeholder="Adınız" />
+          <input type="email" id="email" class="field" placeholder="E Mail" />
+          <input type="text" id="phone" class="field" placeholder="Telefon" />
+          <textarea id="message" placeholder="Mesaj" class="field"></textarea>
+          <button type="submit" class="btn">Gönder</button>
+           </div>
+      </form>
+    </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+     function sendEmail() {
+      Email.send({
+         SecureToken : "cf7c9450-8068-47ed-94c7-d3523bd543f9",
+         To : 'gokseldogangd@gmail.com',
+         From : document.getElementById("email").value,
+         Subject : "Yeni İletişim Formu",
+         Body : "Name: " + document.getElementById("name").value
+             + "<br> Email: " document.getElementById("email").value
+             + "<br> Phone: " document.getElementById("phone").value
+             + "<br> Message: " document.getElementById("message").value
+     }).then(
+     message => alert(Mesajınız Gönderildi.)
+   );
+     }
+    </script>
+    <script>
+      function displayMenu() {
+        var link = document.getElementById("main-nav");
+        link.classList.toggle("responsive");
+      }
+    </script>
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/card.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Göksel Doğan</title>
+  </head>
+  <body>
+    <nav id="main-nav" class="nav responsive">
+      <div class="container">
+        <a class="logo1" href="index.html"
+          ><img class="logo" src="images/logo.png" alt=""
+        /></a>
+        <ul class="navigation">
+          <li class="link"><a href="index.html">Ana Sayfa</a></li>
+          <li class="link"><a href="blogs.html">Blog</a></li>
+          <li class="link"><a href="about.html">Hakkımda</a></li>
+          <li class="link"><a href="contact.html">İletişim</a></li>
+          <li class="last">
+            <a href="#" onclick="displayMenu()"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/bg1.jpg" style="width: 100%" />
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/bg.jpg" style="width: 100%" />
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/bg2.jpg" style="width: 100%" />
+        <div class="text"></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <section id="main-articles" class="py-2">
+      <div class="container">
+        <h2>Blogs</h2>
+        <div class="articles-container">
+          <article class="card">
+            <img src="images/dj1.jpg" alt="" />
+            <div>
+              <div class="category bg-secondary">Prodüksiyon</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati consequuntur, deleniti repudiandae laboriosam at rem.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/dj2.jpg" alt="" />
+            <div>
+              <div class="category bg-secondary ">Prodüksiyon</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati consequuntur, deleniti repudiandae laboriosam at rem.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/dj3.jpg" alt="" />
+            <div>
+              <div class="category bg-secondary">Prodüksiyon</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati consequuntur, deleniti repudiandae laboriosam at rem.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/dj1.jpg" alt="" />
+            <div>
+              <div class="category bg-secondary">Prodüksiyon</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati consequuntur, deleniti repudiandae laboriosam at rem.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/dj2.jpg" alt="" />
+            <div>
+              <div class="category bg-secondary">Prodüksiyon</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati consequuntur, deleniti repudiandae laboriosam at rem.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/dj3.jpg" alt="" />
+            <div>
+              <div class="category bg-secondary">Prodüksiyon</div>
+              <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati consequuntur, deleniti repudiandae laboriosam at rem.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+     <div class="container">
+        <h1 class="text-center pt-3">Müzikler</h1>
+     </div>
+    <section class="hero-section py-2">
+                  <div class="card-grid">
+          <a class="card-music" target="_blank" href="https://fanlink.to/revival1">
+            <div class="card__background" style="background-image: url(images/revival.jpg)"></div>
+            <div class="card__content">
+          
+              <h3 class="card__heading">Revival</h3>
+            </div>
+          </a>
+          <a class="card-music" target="_blank" href="https://fanlink.to/ravestation">
+            <div class="card__background" style="background-image: url(images/ravestation.jpg)"></div>
+            <div class="card__content">
+            
+              <h3 class="card__heading">Rave Station</h3>
+            </div>
+          </a>
+          <a class="card-music" target="_blank" href="https://streamlink.to/ultimate">
+            <div class="card__background" style="background-image: url(images/ultimate.jpg)"></div>
+            <div class="card__content">
+              
+              <h3 class="card__heading">Ultimate</h3>
+            </div>
+          </li>
+          <a class="card-music" target="_blank" href="https://fanlink.to/shineout">
+            <div class="card__background" style="background-image: url(images/shineout.jpg)"></div>
+            <div class="card__content">
+             
+              <h3 class="card__heading">Shine Out</h3>
+            </div>
+          </a>
+        <div>
+      </section>
+    
+
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div>
+          <h3>Booking & Promo</h3>
+          <a href="mailto: gokseldogangd@gmail.com">gokseldogangd@gmail.com</a>
+        </div>
+        <div class="socials">
+          <h3>Sosyal Medya</h3>
+          <div>
+            <a href="https://www.youtube.com/gokseldogan" target="_blank"
+              ><i class="fa-brands fa-youtube fa-2x"></i
+            ></a>
+            <a href="https://www.instagram.com/gokseldogangd" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+            <a href="https://spoti.fi/2UD77la" target="_blank"
+              ><i class="fa-brands fa-spotify fa-2x"></i
+            ></a>
+            <a href="https://apple.co/2zq4Fab" target="_blank"
+              ><i class="fa-brands fa-itunes fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <p>Copyright © 2023, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function displayMenu() {
+        var link = document.getElementById("main-nav");
+        link.classList.toggle("responsive");
+      }
+    </script>
+  </body>
+</html>
